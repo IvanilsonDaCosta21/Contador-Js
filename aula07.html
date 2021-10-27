@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="utf-8">
+	<title>Somando Numeros</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		body{
+			font-size: 25px;
+			font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+		}
+		/* .cabecalho */
+		.cabecalho{
+			color: #ca9d5a;
+			background-color: #000;
+			padding: 12px 10px;
+		}
+		.row{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		.a_link{
+			text-decoration: none;
+			text-transform: uppercase;
+			font-weight: bolder;
+			font-size: 30px;
+			cursor: pointer;
+		}
+		.a_link:hover{
+			transform: scale(1.1) ;
+		}
+		.lista{
+			display: flex;
+			gap: 10px;
+		}
+		.lista li{
+			list-style: none;
+			padding: 10px 8px;
+			transition: all .3s;
+		}
+		.lista li:hover{
+			cursor: pointer;
+			display: block;
+			color: #fff;
+			padding: 10px 8px;
+			border-radius: 4px ;
+			background-color: rgba(255, 255, 255, 0.116);
+		}
+		
+
+
+
+
+
+		.container{
+			background-color: #000;
+			color: #fff;
+			
+			padding: 15px;
+			text-align: center;
+			
+		}
+		#res{
+			padding: 15px 0;
+			font-size: 12px;
+		}
+		input{
+			padding: 8px 0;
+			font-size: 15px;
+			border: none;
+			outline: none;
+			background-color: rgba(255, 255, 255, 0.205);
+		}
+		input:focus{
+			border: 2px solid #ca9d5a;
+		}
+		input[type=number]{
+			width: 80px;
+			font-size: 20px;
+		}
+		input[type= button]{
+			background-color: #ca9d5a;
+			padding: 12px 18px;
+			border: none;
+			font-weight: bold;
+			cursor: pointer;
+		}
+		option, select{
+			width: 205px;
+			font-size: 15px;
+		}
+		.titulo{
+			margin-bottom: 20px;
+		}
+		
+	</style>
+</head>
+<body>
+	<header class="cabecalho">
+		<div class="row">
+			<p class="a_link" onmousemove="mudarConteudo()" onmouseleave="retirarConteudo()">Operadores</p>
+			<ul class="lista">
+				<li>Soma</li>
+				<li>Multiplicação</li>
+				<li>Subtraçao</li>
+				<li>Divisão</li>
+			</ul>
+		</div>
+
+	</header>
+
+	<section class="container">
+		<h1 class="titulo">Introduza Números na caixa</h1>
+		<input type="number" name="txtn1" id="txtn1"> 
+		<select id="operadores">
+			<option value="" selected disabled>Selecione um Operador</option>
+			<option value="soma" id="soma"> + </option>
+			<option value="multiplicacao" id="multiplicacao"> * </option>
+			<option value="subtracao" id="subtracao"> - </option>
+			<option value="divisao" id="divisao"> / </option>
+		</select>
+		<input type="number" name="txtn2" id="txtn2">
+		<input type="button" name="somar" value="Somar" onclick="somar()">
+		<div id="res">Aqui vai sair o resultado quando clicado no botão Somar</div>
+	</section>
+
+	<script type="text/javascript" src="javascript07.js">	
+	</script>
+</body>
+</html>
