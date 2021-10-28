@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <title>Trânsito</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-size: 25px;
+        font-family: "Montserrat", Arial, Helvetica, sans-serif;
+      }
+      /* .cabecalho */
+      .cabecalho {
+        color: #ca9d5a;
+        background-color: #000;
+        padding: 12px 10px;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .a_link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 30px;
+        cursor: pointer;
+      }
+      .a_link:hover {
+        transform: scale(1.1);
+      }
+      .lista {
+        display: flex;
+        gap: 10px;
+      }
+      .lista li {
+        list-style: none;
+        padding: 10px 8px;
+        transition: all 0.3s;
+      }
+      .lista li:hover {
+        cursor: pointer;
+        display: block;
+        color: #fff;
+        padding: 10px 8px;
+        border-radius: 4px;
+        background-color: rgba(255, 255, 255, 0.116);
+      }
+      .container {
+        background-color: #000;
+        color: #fff;
+
+        padding: 15px;
+        text-align: center;
+      }
+      #res {
+        padding: 15px 0;
+        font-size: 12px;
+      }
+      input {
+        padding: 8px 0;
+        font-size: 15px;
+        border: none;
+        outline: none;
+        background-color: rgba(255, 255, 255, 0.205);
+      }
+      input:focus {
+        border: 2px solid #ca9d5a;
+      }
+      input[type="number"] {
+        width: 80px;
+        font-size: 20px;
+        color: #fff;
+      }
+      input[type="button"] {
+        background-color: #ca9d5a;
+        padding: 12px 18px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      option,
+      select {
+        width: 205px;
+        font-size: 15px;
+      }
+      .titulo {
+        margin-bottom: 20px;
+      }
+      .seg_p {
+        background-color: green;
+        color: #000;
+        margin: 0 auto;
+        padding: 8px 16px;
+        text-align: center;
+        font-size: 18px;
+      }
+      .prim_p {
+        margin-bottom: 15px;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <h1 class="titulo">Sistema de Multas</h1>
+      Velocidade do Carro:
+      <input type="number" name="txtvel" id="txtvel" /> km/h
+      <input type="button" value="Verificar" onclick="calcular()" />
+      <div id="res"></div>
+    </section>
+
+    <script type="text/javascript" src="javascript09.js"></script>
+  </body>
+</html>
