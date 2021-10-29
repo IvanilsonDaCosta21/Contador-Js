@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hora do Dia</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(107, 138, 241);
+        font-family: "Montserrat", Arial, Helvetica, sans-serif;
+      }
+      header {
+        color: #fff;
+        text-align: center;
+        margin: 15px 0;
+      }
+      section {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 15px;
+        width: 500px;
+        margin: auto;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      }
+      footer {
+        color: #fff;
+        text-align: center;
+        font-style: italic;
+        margin: 15px;
+      }
+      .btn{
+        text-align: center;
+        margin: 10px ;
+      }
+      input[type=button]{
+        padding: 10px 25px;
+        border: none;
+        border: .5px solid #000;
+        border-radius: 5px;
+      }
+      input[type=button]:hover{
+        background-color: gray;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+      }
+      .inp_ano{
+        padding: 10px 0;
+        font-size: 18px;
+      }
+      input[type=number]{
+        padding: 6px 0;
+      }
+      .alinhar{
+        text-align: center;
+      }
+      .alinhar{
+        margin: 10px 0;
+      }
+   
+     
+    </style>
+  </head>
+  <body>
+    <header><h1>Verficador de Idade</h1></header>
+    <section class="container">
+      <div>
+
+        <p class="inp_ano">Ano de nascimento:
+          <input type="number" name="txtano" id="txtano" min="0">
+        </p>
+        <p>Sexo:
+          <input type="radio" name="radsex" id="mas" checked>
+          <label for="mas">Masculino</label>
+          <input type="radio" name="radsex" id="fem">
+          <label for="fem">Feminino</label>
+        </p>
+        <p class="btn"><input type="button" value="Verficar" onclick="verificar()"></p>
+      </div>
+
+      <div id="res">
+        Preencha os dados acima para ver o resultado
+      </div>
+    </section>
+    <footer>
+      <p>&copy; Ivanilson</p>
+    </footer>
+
+    <script type="text/javascript" src="exercicio2.js"></script>
+  </body>
+</html>

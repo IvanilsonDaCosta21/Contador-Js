@@ -2,7 +2,7 @@
 <html lang="pt">
   <head>
     <meta charset="utf-8" />
-    <title>Trânsito</title>
+    <title>Hora do Dia</title>
     <style>
       * {
         padding: 0;
@@ -34,15 +34,30 @@
         margin: 15px;
 
       }
+      #foto{
+        text-align: center;
+      }
+      #msg{
+        text-align: center;
+        margin: 15px 0;
+      }
+      #imagem{
+        margin: 15px 0;
+      }
       
     </style>
   </head>
-  <body>
-    <header> <h1>Sistema de Multas</h1></header>
+  <body onload="carregar()">
+    <header> <h1>Hora do Dia</h1></header>
     <section class="container">
      
-      <div>Testando</div>
-      <div></div>
+      <div id="msg">
+        Aqui vai aparecer a imagem
+      </div>
+
+      <div id="foto">
+        <img id="imagem" src="img/manha.png" alt="foto do dia">
+      </div>
       
     </section>
     <footer>
