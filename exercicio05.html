@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <title>Contador</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(107, 138, 241);
+        font-family: "Montserrat", Arial, Helvetica, sans-serif;
+        color: #fff;
+      }
+      header{
+        text-align: center;
+        margin: 15px 0;
+      }
+      section{
+        color: rgba(0, 0, 0, 0.822);
+        padding: 20px;
+        background-color: #fff;
+        width: 400px;
+        border-radius: 5px;
+        margin: 0 auto;
+        text-align: left;
+        padding-left: 15px;
+        box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.37);
+      }
+      .dados{
+        padding: 25px;
+      }
+      p > input[type=number]{
+        padding: 4px 0;
+        margin-bottom: 10px;
+        width: 100%;
+      }
+      footer{
+        margin-top: 15px;
+        text-align: center;
+      }
+      #res{
+        margin-top: 15px;
+      }
+      .btn{
+        text-align: center;
+        margin: 15px 0;
+      }
+      .btn > input{
+        padding: 6px 15px;
+      }
+
+   
+     
+    </style>
+  </head>
+  <body>
+    <header >
+      <h1>Vamos contar</h1>
+    </header>
+    <section>
+      <div id="dados">
+        <p>Inicio: <input type="number" name="inicio" id="txti"> </p>
+        <p>Fim: <input type="number" name="fim" id="txtf"></p>
+        <p>Passo: <input type="number" name="passo" id="txtp"></p>
+        <p class="btn"><input type="button" value="Contar" onclick="contar()"></p>
+      </div>
+      <div id="res">
+        ...Preparando a contagem...
+      </div>
+    </section>
+    <footer>
+      <p>&copy; Ivanilson</p>
+    </footer>
+
+
+   
+
+    <script type="text/javascript" src="exercicio05.js"></script>
+  </body>
+</html>
